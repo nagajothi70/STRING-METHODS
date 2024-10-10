@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String methods</title>
+</head>
+<body>
+    <h1>String methods</h1>
+    <label>Enter a text:</label>
+    <input id="input" type="text" size="49" value="Prasanth"> <br>
+    
+    <button type="button" onclick ="length()">length()</button> <br>
+    
+    <button type="button" onclick ="slice()">slice(0,3)</button> <br>
+    
+    <button type="button" onclick ="substring()">substring(0,4)</button><br>
+    
+    <button type="button" onclick ="substr()">substr(0,6)</button><br>
+    
+    <button type="button" onclick ="replace()">replce(I love cats. Cats are very easy to love. Cats are very popular.)</button><br>
+    
+    <button type="button" onclick ="replaceAll()">replaceAll(cats -> Dogs)</button><br>
+    
+    <button type="button" onclick ="toUpperCase()">toUpperCase()</button><br>
+    
+    <button type="button" onclick ="toLowerCase()">toLowerCase()</button><br>
+    
+    <button type="button" onclick ="concat()">concat(" ","The End")</button><br>
+    
+    <button type="button" onclick ="trim()">trim()</button><br>
+    
+    <button type="button" onclick ="trimStart()">trimStart()</button><br>
+    
+    <button type="button" onclick ="trimEnd()">trimEnd()</button><br>
+    
+    <button type="button" onclick ="padStart()">padStart()</button><br>
+    
+    <button type="button" onclick ="padEnd()">padEnd()</button><br>
+    
+    <button type="button" onclick ="charAt()">charAt(1)</button><br>
+    
+    <button type="button" onclick ="charCodeAt()">charCodeAt()</button><br>
+    
+    <button type="button" onclick ="split()">split()</button><br>
+    
+
+
+<p><span id="output"></span></p>
+<script>
+    
+
+
+function length()
+{
+let a=document.getElementById("input").value
+let len = a.length
+document.getElementById("output").innerHTML=len 
+}
+
+
+function slice()
+{
+let b=document.getElementById("input").value
+let s= b.slice(0,3)
+document.getElementById("output").innerHTML=s
+}
+
+function substring()
+{
+let c=document.getElementById("input").value
+let subS= c.substring(0,4)
+document.getElementById("output").innerHTML=subS
+}
+
+function substr()
+{
+let c=document.getElementById("input").value
+let subS= c.substr(0,6)
+document.getElementById("output").innerHTML=subS
+}
+
+function replace()
+{
+let c=document.getElementById("input").value
+let subS= c.replace("Prasanth","I love cats. Cats are very easy to love. Cats are very popular.")
+document.getElementById("input").value =innerHTML=subS
+}
+
+function replaceAll()
+{
+let c=document.getElementById("input").value
+let subS= c.replaceAll("cats","dogs")
+document.getElementById("input").value =innerHTML=subS
+}
+
+function toUpperCase()
+{
+let c=document.getElementById("input").value
+let subS= c.toUpperCase()
+document.getElementById("input").value =innerHTML=subS
+}
+
+function toLowerCase()
+{
+let c=document.getElementById("input").value
+let subS= c.toLowerCase()
+document.getElementById("input").value =innerHTML=subS
+}
+
+function concat()
+{
+let c=document.getElementById("input").value
+let c2 = "The End"
+let subS= c.concat(" ",c2)
+document.getElementById("input").value =innerHTML=subS
+}
+
+function trim()
+{
+let c=document.getElementById("input").value
+let subS= c.trim()
+document.getElementById("input").value =innerHTML=subS
+}
+
+function trimStart()
+{
+let c=document.getElementById("input").value
+let subS= c.trimStart()
+document.getElementById("input").value =innerHTML=subS
+}
+
+function trimEnd()
+{
+let c=document.getElementById("input").value
+let subS= c.trimEnd()
+document.getElementById("input").value =innerHTML=subS
+}
+
+function padStart()
+{
+let c=document.getElementById("input").value
+let subS= c.padStart(12,"R.S.")
+document.getElementById("output"). innerHTML=subS
+}
+
+function padEnd()
+{
+let c=document.getElementById("input").value
+let subS= c.padEnd(12,".R.S")
+document.getElementById("output"). innerHTML=subS
+}
+
+function charAt()
+{
+let c=document.getElementById("input").value
+document.getElementById('output').innerHTML = c.charAt(1)
+}
+
+function charCodeAt()
+{
+let c=document.getElementById("input").value
+document.getElementById('output').innerHTML = c.charCodeAt(1)
+}
+
+function split()
+{
+let c=document.getElementById('input').value
+let sp= c.split(" ")
+document.getElementById('output').innerHTML = c[0]
+}
+
+</script>
+</body>
+</html>
